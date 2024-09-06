@@ -14,6 +14,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from spes device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
+# Everest stuff
+EVEREST_MAINTAINER := Knotzy07x
+WITH_GAPPS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_DISABLE_EPPE := true
+
 # Device identifier
 PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
